@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import "reset.css";
+
+body{
+    font-size: 14px;
+}
+.box{
+    width: 325px;
+    height: 400px;
+    background: rgba(90,90,90,0.5);
+    margin: 20px 20px;
+}
+.box:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+.one:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+.one{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin:30px 22px;
+    float: left;
+    width: 100%;
+}
+.two,.three{
+    margin: 0 22px;
+    position: relative;
+    >p{
+       color: #fff;
+    }
+    >p:after{
+        clear: both;
+        content: '';
+        display: block;
+    }
+    span{
+        float: right;
+    }
+    >div{
+        margin: 4px 0 8px 0;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input{
+            border: none;
+            height: 14px;
+            padding-left:10px ;
+        }
+        .twoOne,.threeOne{
+            font-weight: bold;
+        }
+        .twoTwo,.threeTwo{
+            cursor: pointer;
+            width: 42px;
+            line-height: 42px;
+            text-align: center;
+            border-left: 1px solid #000000;
+            box-sizing: border-box;
+            
+        }
+    }
+    .uul,.ull{
+        border: 1px solid #000000;
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+        bottom: -108%;
+        width: 281px;
+        z-index: 20;
+        display: none;
+        span{
+            float: none;
+        };
+        li{
+            padding: 6px 10px;
+            list-style: none;
+            background: #fff;
+        }
+        li:hover{
+            background: lightblue;
+        }
+    }
+    .ull{
+        top: 60px;
+    }
+}
+.sou{
+    
+    margin: 0 22px;
+    background: #0094EF;
+    text-align: center;
+        padding: 14px 0;
+    a{
+        color: #fff;
+        width: 100%;
+        height: 100%;
+    }
+}
+.last{
+    text-align: center;
+    color: #CCCCCC;
+    font-size: 13px;
+    margin-top: 10px;
+}

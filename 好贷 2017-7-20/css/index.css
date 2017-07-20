@@ -1,0 +1,95 @@
+@import url(reset.css);
+body {
+  font-size: 14px; }
+
+.box {
+  width: 325px;
+  height: 400px;
+  background: rgba(90, 90, 90, 0.5);
+  margin: 20px 20px; }
+
+.box:after {
+  clear: both;
+  content: '';
+  display: block; }
+
+.one:after {
+  clear: both;
+  content: '';
+  display: block; }
+
+.one {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 30px 22px;
+  float: left;
+  width: 100%; }
+
+.two, .three {
+  margin: 0 22px;
+  position: relative; }
+  .two > p, .three > p {
+    color: #fff; }
+  .two > p:after, .three > p:after {
+    clear: both;
+    content: '';
+    display: block; }
+  .two span, .three span {
+    float: right; }
+  .two > div, .three > div {
+    margin: 4px 0 8px 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .two > div input, .three > div input {
+      border: none;
+      height: 14px;
+      padding-left: 10px; }
+    .two > div .twoOne, .two > div .threeOne, .three > div .twoOne, .three > div .threeOne {
+      font-weight: bold; }
+    .two > div .twoTwo, .two > div .threeTwo, .three > div .twoTwo, .three > div .threeTwo {
+      cursor: pointer;
+      width: 42px;
+      line-height: 42px;
+      text-align: center;
+      border-left: 1px solid #000000;
+      box-sizing: border-box; }
+  .two .uul, .two .ull, .three .uul, .three .ull {
+    border: 1px solid #000000;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    bottom: -108%;
+    width: 281px;
+    z-index: 20;
+    display: none; }
+    .two .uul span, .two .ull span, .three .uul span, .three .ull span {
+      float: none; }
+    .two .uul li, .two .ull li, .three .uul li, .three .ull li {
+      padding: 6px 10px;
+      list-style: none;
+      background: #fff; }
+    .two .uul li:hover, .two .ull li:hover, .three .uul li:hover, .three .ull li:hover {
+      background: lightblue; }
+  .two .ull, .three .ull {
+    top: 60px; }
+
+.sou {
+  margin: 0 22px;
+  background: #0094EF;
+  text-align: center;
+  padding: 14px 0; }
+  .sou a {
+    color: #fff;
+    width: 100%;
+    height: 100%; }
+
+.last {
+  text-align: center;
+  color: #CCCCCC;
+  font-size: 13px;
+  margin-top: 10px; }
+
+/*# sourceMappingURL=index.css.map */
